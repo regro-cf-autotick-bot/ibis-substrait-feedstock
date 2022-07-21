@@ -1,5 +1,5 @@
 {% set name = "ibis-substrait" %}
-{% set version = "2.9.2" %}
+{% set version = "2.9.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ibis-substrait-{{ version }}.tar.gz
-  sha256: 47dba2cb38b2bc195424a6df5340277df34f70b0ceeccc51d8010386cd27d29c
+  sha256: 736e19d50735818a02481b5a86b5b8acb2dc2f8b7d40fa2bd62b843fdeeb2935
 
 build:
   noarch: python
