@@ -27,7 +27,7 @@ requirements:
     - ibis-framework-core >=2,<4
     - packaging >=21.3,<22.0
     - platformdirs <2.5.3
-    - protobuf >=3.19,<3.20
+    - protobuf >=3.20,<3.21
     - python >=3.6,<3.11
 
 test:
