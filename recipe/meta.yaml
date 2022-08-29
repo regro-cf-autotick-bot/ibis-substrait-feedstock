@@ -29,6 +29,7 @@ requirements:
     - platformdirs <2.5.3
     - protobuf >=3.20,<3.21
     - python >=3.6,<3.11
+    - sqlalchemy >=1.4,<2
 
 test:
   imports:
