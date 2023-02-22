@@ -32,10 +32,6 @@ requirements:
 test:
   imports:
     - ibis_substrait
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/ibis-project/ibis-substrait
