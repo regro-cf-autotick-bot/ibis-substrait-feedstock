@@ -1,11 +1,11 @@
-About ibis-substrait
-====================
+About ibis-substrait-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ibis-substrait-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ibis-project/ibis-substrait
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ibis-substrait-feedstock/blob/main/LICENSE.txt)
 
 Summary: Subtrait compiler for ibis
 
