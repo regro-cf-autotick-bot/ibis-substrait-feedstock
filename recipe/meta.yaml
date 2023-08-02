@@ -16,17 +16,18 @@ build:
 
 requirements:
   build:
-    - python >=3.8
+    - python >=3.9
     - pip
     - poetry-core
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - poetry-core
   run:
-    - ibis-framework-core >=3
-    - protobuf ==3.20.1
-    - python >=3.8
+    - ibis-framework-core >=4
+    - python >=3.9
+    - python-substrait >=0.2.1
+    - pyyaml >=5
     - sqlalchemy >=1.4,<2
 
 test:
