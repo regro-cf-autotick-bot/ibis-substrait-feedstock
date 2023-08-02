@@ -25,10 +25,12 @@ requirements:
     - poetry-core
   run:
     - ibis-framework-core >=4
+    - packaging >=21.3
     - python >=3.9
     - python-substrait >=0.2.1
     - pyyaml >=5
-    - sqlalchemy >=1.4,<2
+    - sqlalchemy >=1.4
+    - toolz >=0.11
 
 test:
   imports:
