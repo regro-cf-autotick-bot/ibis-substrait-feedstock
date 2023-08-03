@@ -1,5 +1,5 @@
 {% set name = "ibis-substrait" %}
-{% set version = "2.29.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ibis_substrait-{{ version }}.tar.gz
-  sha256: 14beca0b04e648543e3aefa132a40f6f6fd8ef370e85d10b969c209e6d8e9e38
+  sha256: eb85960dceda6bcd6ed44e177e7b899a5f4214f16b3337f3cf9a4f01114c9841
 
 build:
   noarch: python
@@ -16,18 +16,21 @@ build:
 
 requirements:
   build:
-    - python >=3.8
+    - python >=3.9
     - pip
     - poetry-core
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - poetry-core
   run:
-    - ibis-framework-core >=3
-    - protobuf ==3.20.1
-    - python >=3.8
-    - sqlalchemy >=1.4,<2
+    - ibis-framework-core >=4
+    - packaging >=21.3
+    - python >=3.9
+    - python-substrait >=0.2.1
+    - pyyaml >=5
+    - sqlalchemy >=1.4
+    - toolz >=0.11
 
 test:
   imports:
