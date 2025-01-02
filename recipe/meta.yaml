@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ibis_substrait-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ibis_substrait-{{ version }}.tar.gz
   sha256: 614810a173d096fbc49d87a9b419e2162a3c25d8efda1a4d57a389ce56b9041f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -21,17 +21,19 @@ requirements:
     - poetry-core
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - poetry-core
   run:
     - ibis-framework-core >=9
     - packaging >=21.3
-    - python >=3.9
+    - python >={{ python_min }}
     - python-substrait >=0.2.1
     - pyyaml >=5
     - toolz >=0.11
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ibis_substrait
 
